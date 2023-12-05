@@ -1,0 +1,44 @@
+/* Esta es la hoja de estilos principal de la aplicación. */
+
+/* Estilos generales */
+:root {
+  --color-primary: rgb(126, 126, 214);
+  --color-secondary: rgb(97, 97, 97);
+  --color-text: black;
+  --color-background: white;
+}
+
+body.dark-mode {
+  --color-primary: black;
+  --color-secondary: #121212;
+  --color-text: white;
+  --color-background: black;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+h1 {
+  color: var(--color-text);
+}
+
+/* Estilos de la barra de navegación */
+
+nav {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 1rem;
+}
+
+nav a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
