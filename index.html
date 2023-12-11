@@ -1,87 +1,98 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Medina Azahara voleibol</title>
-    <link rel="stylesheet" href="css/styles.css">
+<title>Club de Voleibol</title>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Barra de navegacion -->
-    <nav>
-        <!-- Logo -->
-        <div class="contenedor-logo">
-            <div>
-                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
-            </div>
+<!-- Barra de navegación -->
+<nav>
+    <!-- Logo -->
+    <div class="logo">
+        <div>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
         </div>
-
-        <!-- Selector de paginas -->
-        <div class="selector">
-            <a href="">Servicios</a>
-            <a href="">Nosotros</a>
-            <a href="">Contacto</a>
-        </div>
-
-        <!-- Redes sociales -->
-        <div class="redes">
-            <div>
-                <a href=""><img src="" alt=""></a>
-            </div>
-            <div>
-                <a href=""><img src="" alt=""></a>
-            </div>
-            <div>
-                <a href=""><img src="" alt=""></a>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Boton modo oscuro fijado en la parte inferior derecha -->
-    <div class="modo-oscuro">
-        <button class="modo-oscuro-btn" id="modo-oscuro-btn">
-            <i class="fas fa-moon"></i>
-        </button>
     </div>
 
-    <!-- Contenido principal -->
-    <header>
-        <h1 class="titulo"> Medina azahara voleibol </h1>
-        <p class="subtitulo"> Bienvenido a la web del club de voleibol Medina Azahara </p>
-
-        <!-- Boton para hacer un formulario de inscripción -->
-        <a href="formularioentrada.html" target="_self">Inscribete</a>
-    </header>
-    <main>
-        <section class="servicios" id="servicios-sct">
-            <h1>Servicios</h1>
-            <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-        </section>
-        <section class="nosotros" id="nosotros-sct">
-            <h1>Nosotros</h1>
-            <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-        </section>
-        <section class="contacto" id="contacto-sct">
-            <h1>Contacto</h1>
-            <!-- Formulario de contacto -->
-            <form action="enviar.php" method="post">
-                <input type="text" name="nombre" placeholder="Nombre" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <!-- El footer contendrá un wave path -->
-        <p>Copyright 2023</p>
-    <div class="imagenes">
-        <img src="" alt="">
-        <img src="" alt="">
+    <!-- Selector de páginas -->
+    <div class="selector">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
     </div>
-    </footer>
-    <script src="js/app.js"></script>
 
+    <!-- Redes sociales -->
+    <div class="redes">
+        <div>
+            <a href="#"><img src="img/tiktok.png" alt="Tiktok"></a>
+        </div>
+        <div>
+            <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
+        </div>
+        <div>
+            <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+</nav>
 
-    </body>
+<!-- Botón modo oscuro fijado en la parte inferior derecha -->
+<div class="modo-oscuro">
+    <button class="modo-claro-oscuro" id="modo-claro-oscuro">
+        <i class="fas fa-moon"></i>
+    </button>
+</div>
+
+<!-- Contenido principal -->
+<header>
+    <h1 class="titulo">Medina Voleibol</h1>
+    <p class="subtitulo">Bienvenido a la web del club de voleibol Medina</p>
+
+    <!-- Botón para hacer un formulario de inscripción -->
+    <a href="formularioentrada.html" target="_self">Inscríbete</a>
+</header>
+<main>
+    <section class="servicios" id="servicios">
+        <div class="pretexto">
+            <h2>Servicios</h2>
+            <p>Ofrecemos una amplia gama de servicios para jugadores de todos los niveles:</p>
+        </div>
+        <ul class="lista-servicios">
+            <li class="servicio">Entrenamientos semanales
+                <ul>
+                    <li>Infantil </li>
+                    <li>Cadete </li>
+                    <li>Juvenil </li>
+                    <li>Senior </li>
+                </ul>
+
+            </li>
+            <li class="servicio">Partidos amistosos</li>
+            <li class="servicio">Torneos locales e internacionales</li>
+            <li class="servicio">Clases de técnica y táctica</li>
+        </ul>
+    </section>
+    <section class="nosotros" id="nosotros">
+        <div class="pretexto">
+            <h2>Nosotros</h2>
+            <p>Somos un club de voleibol con más de 20 años de experiencia en el deporte. Nuestro objetivo es promover el voleibol y formar jugadores de alto nivel.</p>
+        </div>
+        <div class="imagen-nosotros">
+            <img src="img/nosotros.jpg" alt="nosotros">
+    </section>
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <!-- Formulario de contacto -->
+        <form>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</main>
+<footer>
+    <!-- El footer contendrá información de contacto y derechos de autor -->
+    <p>Contacto: info@medinavoleibol.com</p>
+    <p>Derechos de autor &copy; 2023 Medinavoleibol</p>
+    <div class="footer-redes"> <img src="" alt="instagram"> <img src="" alt="tiktok"></div>
+</footer>
+<script src="js/app.js"></script>
+</body>
 </html>

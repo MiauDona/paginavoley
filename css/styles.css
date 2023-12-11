@@ -18,10 +18,16 @@ body.dark-mode {
 body {
   background-color: var(--color-background);
   color: var(--color-text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   color: var(--color-text);
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos de la barra de navegación */
@@ -30,15 +36,173 @@ nav {
   background-color: var(--color-primary);
   color: var(--color-text);
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
 }
 
-nav a {
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
   color: var(--color-text);
   text-decoration: none;
 }
 
-nav a:hover {
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
   color: var(--color-secondary);
   text-decoration: underline;
 }
+
+nav .redes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .redes a {
+  color: var(--color-text);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+nav .redes a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--color-text);
+
+}
+
+header p {
+  font-size: 24px;
+  color: var(--color-text);
+}
+
+/* Estilos de la sección de servicios */
+
+section {
+  padding: 2rem;
+  height: 33vh;
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+section p {
+  font-size: 18px;
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+
+.servicios {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: space-between;
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.servicio {
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.lista-servicios {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  margin: 2rem;
+
+}
+
+.servicio h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos del botón de modo claro y oscuro */
+.modo-claro-oscuro {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.modo-claro-oscuro:hover {
+  cursor: pointer;
+}
+
 
